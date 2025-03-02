@@ -13,8 +13,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Bored Web",
-  description: "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+  title: "Bored Web - Discover Quirky Digital Experiences",
+  description:
+    "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+  openGraph: {
+    title: "Bored Web - Discover Quirky Digital Experiences",
+    description:
+      "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+    url: "https://feeling-bored.vercel.app",
+    siteName: "Bored Web",
+    images: [
+      {
+        url: "https://feeling-bored.vercel.app/og-image.jpg", // Replace with your actual OG image if available
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bored Web - Discover Quirky Digital Experiences",
+    description:
+      "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+    images: ["https://feeling-bored.vercel.app/twitter-image.jpg"], // Replace with your actual Twitter image if available
+  },
+  alternates: {
+    canonical: "https://feeling-bored.vercel.app",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
