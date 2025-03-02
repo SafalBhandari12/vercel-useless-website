@@ -50,32 +50,40 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
+        {/* Google Site Verification Meta Tag */}
+        <meta
+          name='google-site-verification'
+          content='Or5IbHvuU7e_OAFFJYG3iQW-6DjERpgsApcCokH5DNw'
+        />
         <Script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
+          crossOrigin='anonymous'
+          strategy='afterInteractive'
         />
         <script
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Bored Web",
-              "url": "https://feeling-bored.vercel.app",
-              "potentialAction": {
+              name: "Bored Web",
+              url: "https://feeling-bored.vercel.app",
+              potentialAction: {
                 "@type": "SearchAction",
-                "target": "https://feeling-bored.vercel.app/?s={search_term_string}",
+                target:
+                  "https://feeling-bored.vercel.app/?s={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),
           }}
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
