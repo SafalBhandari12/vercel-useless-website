@@ -3,7 +3,38 @@ import InteractiveSection from "@/components/InteractiveSection";
 
 export const metadata = {
   title: "Bored Web",
-  description: "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+  description:
+    "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+  openGraph: {
+    title: "Bored Web",
+    description:
+      "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+    url: "https://yourdomain.com", // Replace with your actual domain
+    siteName: "Bored Web",
+    images: [
+      {
+        url: "https://yourdomain.com/og-image.jpg", // Replace with your OG image URL
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bored Web",
+    description:
+      "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+    images: ["https://yourdomain.com/twitter-image.jpg"], // Replace with your Twitter image URL
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://yourdomain.com", // Replace with your canonical URL
+  },
 };
 
 export default function Page() {
