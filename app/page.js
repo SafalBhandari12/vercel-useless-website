@@ -14,6 +14,7 @@ const FloatingCube = memo(({ delay, style }) => (
     }}
   />
 ));
+FloatingCube.displayName = "FloatingCube";
 
 const Home = () => {
   const [buttonText, setButtonText] = useState({
