@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Bored Web - Discover Quirky Digital Experiences",
   description:
-    "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+    "Explore curated web experiments that spark a smile and distract you from the ordinary. Embrace the wonderfully useless!",
   openGraph: {
     title: "Bored Web - Discover Quirky Digital Experiences",
     description:
-      "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+      "Explore curated web experiments that spark a smile and distract you from the ordinary. Embrace the wonderfully useless!",
     url: "https://feeling-bored.vercel.app",
     siteName: "Bored Web",
     images: [
@@ -36,7 +36,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Bored Web - Discover Quirky Digital Experiences",
     description:
-      "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+      "Explore curated web experiments that spark a smile and distract you from the ordinary. Embrace the wonderfully useless!",
     images: ["https://feeling-bored.vercel.app/twitter-image.jpg"], // Replace with your actual Twitter image if available
   },
   alternates: {
@@ -57,6 +57,22 @@ export default function RootLayout({ children }) {
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
           crossOrigin="anonymous"
           strategy="afterInteractive"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Bored Web",
+              "url": "https://feeling-bored.vercel.app",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://feeling-bored.vercel.app/?s={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
