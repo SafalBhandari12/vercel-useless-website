@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://feeling-bored.vercel.app/
+
+# Sitemaps
+Sitemap: https://feeling-bored.vercel.app/sitemap.xml

@@ -1,6 +1,11 @@
 // app/page.js
 import InteractiveSection from "@/components/InteractiveSection";
 
+export const metadata = {
+  title: "Bored Web",
+  description: "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
+};
+
 export default function Page() {
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex flex-col items-center justify-center text-center px-4 overflow-hidden relative'>
