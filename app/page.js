@@ -46,11 +46,11 @@ export default function Page() {
           <span className="block mb-2">Useless</span>
           <span className="block text-7xl font-extrabold">Websites</span>
         </h1>
-        <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+        <h2 className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
           Explore our curated collection of quirky digital experiences. Each
           click unveils a unique, whimsical web creation – perfect for sparking
           joy or satisfying curiosity.
-        </p>
+        </h2>
         {/* New H2 tag with internal link */}
         <h2 className="text-3xl font-semibold mt-8">Discover More</h2>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto">
