@@ -2,18 +2,18 @@
 import InteractiveSection from "@/components/InteractiveSection";
 
 export const metadata = {
-  title: "Bored Web",
+  title: "Bored Web - Discover Quirky Digital Experiences",
   description:
     "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
   openGraph: {
-    title: "Bored Web",
+    title: "Bored Web - Discover Quirky Digital Experiences",
     description:
       "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
-    url: "https://yourdomain.com", // Replace with your actual domain
+    url: "https://feeling-bored.vercel.app",
     siteName: "Bored Web",
     images: [
       {
-        url: "https://yourdomain.com/og-image.jpg", // Replace with your OG image URL
+        url: "https://feeling-bored.vercel.app/og-image.jpg", // Replace with your actual OG image if available
         width: 800,
         height: 600,
       },
@@ -23,17 +23,17 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bored Web",
+    title: "Bored Web - Discover Quirky Digital Experiences",
     description:
       "Explore a curated collection of random, amusing web experiments designed to spark a smile and distract you from the ordinary. Dare to embrace the wonderfully useless!",
-    images: ["https://yourdomain.com/twitter-image.jpg"], // Replace with your Twitter image URL
+    images: ["https://feeling-bored.vercel.app/twitter-image.jpg"], // Replace with your actual Twitter image if available
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://yourdomain.com", // Replace with your canonical URL
+    canonical: "https://feeling-bored.vercel.app",
   },
 };
 
